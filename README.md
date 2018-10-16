@@ -19,7 +19,7 @@ How to Use the Redirect Module
 
 redirectSettingsId="{23F429BA-9BBF-4FDD-9BCD-1E7E46A0D029}"
 
-Ex. <site name="website" enableTracking="true" virtualFolder="/" physicalFolder="/" rootPath="/sitecore/content" redirectSettingsId="{23F429BA-9BBF-4FDD-9BCD-1E7E46A0D029}" startItem="/home" language="en" database="web" domain="extranet" allowDebug="true" cacheHtml="true" htmlCacheSize="50MB" registryCacheSize="0" viewStateCacheSize="0" xslCacheSize="25MB" filteredItemsCacheSize="10MB" enablePreview="true" enableWebEdit="true" enableDebugger="true" disableClientData="false" cacheRenderingParameters="true" renderingParametersCacheSize="10MB" enableItemLanguageFallback="false" enableFieldLanguageFallback="false" role:require="Standalone or Reporting or ContentManagement or ContentDelivery" />
+Ex. "<site name="website" enableTracking="true" virtualFolder="/" physicalFolder="/" rootPath="/sitecore/content" redirectSettingsId="{23F429BA-9BBF-4FDD-9BCD-1E7E46A0D029}" startItem="/home" language="en" database="web" domain="extranet" allowDebug="true" cacheHtml="true" htmlCacheSize="50MB" registryCacheSize="0" viewStateCacheSize="0" xslCacheSize="25MB" filteredItemsCacheSize="10MB" enablePreview="true" enableWebEdit="true" enableDebugger="true" disableClientData="false" cacheRenderingParameters="true" renderingParametersCacheSize="10MB" enableItemLanguageFallback="false" enableFieldLanguageFallback="false" role:require="Standalone or Reporting or ContentManagement or ContentDelivery" />"
 
 <strong>How to Use the Redirect Module</strong>
 
