@@ -14,7 +14,10 @@ It Supports 3 type of redirection
 </ol>
 How to Use the Redirect Module
 
-Download and install the Redirect Module from the market place.
+1. Download and install the Redirect Module from the market place.
+2. Add these entry to your Site config file.
+
+redirectSettingsId="{23F429BA-9BBF-4FDD-9BCD-1E7E46A0D029}"
 
 <strong>How to Use the Redirect Module</strong>
 
