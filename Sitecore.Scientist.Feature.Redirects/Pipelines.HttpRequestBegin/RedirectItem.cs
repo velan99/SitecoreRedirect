@@ -180,6 +180,10 @@ namespace Sitecore.Scientist.Feature.Redirects.Pipelines.HttpRequestBegin
             {
                 return;
             }
+            if (Context.PageMode.IsExperienceEditor || Context.PageMode.IsPreview)
+            {
+                return;
+            }
             string itemId = item.ID.ToString();
             Redirect resolvedMapping = this.GetResolvedMapping(itemId);
             bool flag = resolvedMapping != null;

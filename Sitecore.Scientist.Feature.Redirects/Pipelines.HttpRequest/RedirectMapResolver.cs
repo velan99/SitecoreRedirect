@@ -206,6 +206,10 @@ namespace Sitecore.Scientist.Feature.Redirects.Pipelines.HttpRequest
             {
                 return;
             }
+            if (Context.PageMode.IsExperienceEditor || Context.PageMode.IsPreview)
+            {
+                return;
+            }
             string str = this.EnsureSlashes(Context.Request.FilePath.ToLower());
             RedirectMapping resolvedMapping = this.GetResolvedMapping(str);
             bool flag = resolvedMapping != null;
