@@ -30,7 +30,7 @@ namespace Sitecore.Scientist.Feature.Redirects.Pipelines.HttpRequestBegin
         {
             get
             {
-                return string.Format("{0}AllRedirectMappings-{1}-{2}", "Scientist-Redirect-", Context.Database.Name, Context.Site.Name);
+                return string.Format("{0}AllRedirectMappings-{1}-{2}-{3}", "Scientist-Redirect-", Context.Database.Name, Context.Site.Name,Context.Language.Name);
             }
         }
         protected virtual string GetRedirectUrl(Item redirectItem)
@@ -82,7 +82,7 @@ namespace Sitecore.Scientist.Feature.Redirects.Pipelines.HttpRequestBegin
         {
             get
             {
-                return string.Format("{0}ResolvedRedirect-{1}-{2}", "Scientist-Redirect-", Context.Database.Name, Context.Site.Name);
+                return string.Format("{0}ResolvedRedirect-{1}-{2}-{3}", "Scientist-Redirect-", Context.Database.Name, Context.Site.Name,Context.Language.Name);
             }
         }
         protected virtual Redirect GetResolvedMapping(string ItemId)
@@ -198,7 +198,7 @@ namespace Sitecore.Scientist.Feature.Redirects.Pipelines.HttpRequestBegin
                 Cache cache = HttpRuntime.Cache;
                 string resolvedMappingsPrefix = this.ResolvedRedirectPrefix;
                 DateTime utcNow = DateTime.UtcNow;
-                cache.Add(resolvedMappingsPrefix, item, null, utcNow.AddMinutes((double)this.CacheExpiration), TimeSpan.Zero, CacheItemPriority.Normal, null);
+                cache.Add(resolvedMappingsPrefix, dictionaryitem, null, utcNow.AddMinutes((double)this.CacheExpiration), TimeSpan.Zero, CacheItemPriority.Normal, null);
             }
             if (resolvedMapping != null && HttpContext.Current != null)
             {

@@ -19,7 +19,7 @@ namespace Sitecore.Scientist.Feature.Redirects.Pipelines.HttpRequest
         {
             get
             {
-                return string.Format("{0}AllMappings-{1}-{2}", "Scientist-Redirect-", Context.Database.Name, Context.Site.Name);
+                return string.Format("{0}AllMappings-{1}-{2}-{3}", "Scientist-Redirect-", Context.Database.Name, Context.Site.Name,Context.Language.Name);
             }
         }
 
@@ -121,7 +121,7 @@ namespace Sitecore.Scientist.Feature.Redirects.Pipelines.HttpRequest
         {
             get
             {
-                return string.Format("{0}ResolvedMappings-{1}-{2}", "Scientist-Redirect-", Context.Database.Name, Context.Site.Name);
+                return string.Format("{0}ResolvedMappings-{1}-{2}-{3}", "Scientist-Redirect-", Context.Database.Name, Context.Site.Name,Context.Language.Name);
             }
         }
 
